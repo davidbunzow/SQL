@@ -1,0 +1,18 @@
+
+CREATE TABLE Store (id INTEGER PRIMARY KEY, Name text, Price$ integer, Manufacturer text, Aisle integer);
+INSERT INTO Store VALUES(1, "Hooks", 5, "Shimano", 3);
+INSERT INTO Store VALUES(2, "Fly Fishing Rod", 100, "Remington", 7);
+INSERT INTO Store VALUES(3, "Spin Cast Rod", 90, "Gen Fish", 8);
+INSERT INTO Store VALUES(4, "Reels", 45, "SAGE", 9);
+INSERT INTO Store VALUES(5, "Bait", 3, "Dave's Bait", 1);
+INSERT INTO Store VALUES(6, "Rain Jacket", 60, "Patagonia", 3);
+INSERT INTO Store VALUES(7, "Cooler", 9, "Styro-Foam", 4);
+INSERT INTO Store VALUES(8, "Gloves", 29, "Patagonia", 3);
+INSERT INTO Store VALUES(9, "Hat", 30, "Patagonia", 3);
+INSERT INTO Store VALUES(10, "Strike Indicator", 2, "General Fishin", 9);
+INSERT INTO Store VALUES(11, "Waders", 85, "Gore-Tex", 8);
+INSERT INTO Store VALUES(12, "Line", 10, "Poly-Carb", 1);
+INSERT INTO Store VALUES(13, "Sinkers", 3, "Metal Things", 3);
+INSERT INTO Store VALUES(14, "Fishing Net", 50, "JustMesh", 6);
+INSERT INTO Store VALUES(15, "Bonk Tool", 2, "Hammer Time", 5);
+SELECT * FROM Store WHERE aisle <7 ORDER BY Price$
